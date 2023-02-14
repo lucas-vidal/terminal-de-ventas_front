@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto de Venta v1.0</title>
+    <link rel="icon" type="image/ico" href="./assets/icons/icon.ico" />
+    <link href="./css/main.css" rel="stylesheet"></head>
+</head>
+
+<body>
+
+
+<div class="app-container app-theme-white body-tabs-shadow fixed-sidebar  closed-sidebar fixed-header">
+            
+    <div class="app-header header-shadow">
+   
+   
+   
+        
+        <div class="app-header__content" >
+            <div class="app-header-left">
+                <div style="color: rgb(72, 72, 83); font-size:x-large; font-family: verdana"><b>Terminal</b> </div>
+                <div> <p>&nbsp  &nbsp </p> </div>
+                <div style="color: rgb(42, 42, 134); font-size:x-large; font-family: verdana">Punto de Venta </div>
+                <div> <p>&nbsp  </p> </div>
+            </div>
+         
+            <div class="app-header-right">
+                <ul class="header-menu nav">
+                    <div style="color: rgb(131, 137, 145); font-size:x-large; font-family:verdana;"><b>Compras / Historial de Compras</b> </div>
+                </ul>        
+            </div>
+        </div>
+        
+    </div>    
+
+    <div class="app-main">
+    
+        <div class="app-sidebar sidebar-shadow ">
+
+            <div class="scrollbar-sidebar" style="margin-top: 5%;">
+
+                <div class="app-sidebar__inner">
+
+                    <ul class="vertical-nav-menu ">
+
+                       
+
+
+                        <li>
+                            <a href="ventas.html" >
+                                <i class="metismenu-icon fa fa-cash-register"></i>
+                                Ventas
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="compras.html"  class="mm-active">
+                                <i class="metismenu-icon fa fa-shopping-cart"></i>
+                                Compras
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="facturacion.html" >
+                                <i class="metismenu-icon fa fa-chart-line"></i>
+                                Facturacion
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="stock.html" >
+                                <i class="metismenu-icon fa fa-clipboard"></i>
+                                Stock
+                            </a>
+                        </li>
+                        <li>
+                            <a href="clientes.html" >
+                                <i class="metismenu-icon fa fa-users"></i>
+                                Clientes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="proveedores.html" >
+                                <i class="metismenu-icon fa fa-dolly"></i>
+                                Proveedores
+                            </a>
+                        </li>
+                        <li>
+                            <a href="usuarios.html" >
+                                <i class="metismenu-icon fa fa-user"></i>
+                                Usuarios
+                            </a>
+                        </li>
+                        
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    
+
+    <div class="app-main__outer">
+        <div class="app-main__inner">
+                
+                <div class="card " style="margin: -2%;">
+                    <div class="row"  >
+                        <!--CARGA DE PRODUCTO-->
+                        <div class="mb-3 col-md-12" style="margin-top: 1%;" id="test">
+                            <div class="row">
+                                <div class="col-md-12 align-middle">
+                                    <form class="needs-validation" novalidate>
+                                        <div class="form-row">
+
+                                            <div class="col-md-6 mb-3">
+                                                <div class="form-row">
+                                                    <div class="col-md-6 mb-3">
+                                                        <input type="text" class="form-control" id="validationCustom03" placeholder="Proveedor" required>
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <input type="text" class="form-control" id="validationCustom03" placeholder="ID Compra" required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col-md-4 mb-3">
+                                                        <input type="number" class="form-control" id="validationCustom02" placeholder="Año" value="" required>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <input type="number" class="form-control" id="validationCustom02" placeholder="Mes" value="" required>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <input type="number" class="form-control" id="validationCustom02" placeholder="Dia" value="" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-1 mb-3">
+                                                <button class="btn btn-primary" type="submit" style="height: 85%; font-size: 110%;">Filtrar</button>
+                                            </div>
+
+                                            <div class="col-md-5 mb-3">
+                                                <div class="form-row">
+                                                    
+                                                    <div class="col-md-12 mb-3">
+                                                        <button class="btn btn-primary" type="submit" style="width: 100%; font-size: 110%;">Ver Todo</button>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col-md-4 mb-3">
+                                                        <button class="btn btn-primary" type="submit" style="width: 100%; font-size: 110%;">Este Mes</button>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <button class="btn btn-primary" type="submit" style="width: 100%; font-size: 110%;">Esta Semana</button>
+                                                    </div>
+                                                    <div class="col-md-4 mb-3">
+                                                        <button class="btn btn-primary" type="submit" style="width: 100%; font-size: 110%;">Hoy</button>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>        
+                                    
+                                        
+                                    
+                                    </form>
+                        
+                                        <script>
+                                            // Example starter JavaScript for disabling form submissions if there are invalid fields
+                                            (function() {
+                                                'use strict';
+                                                window.addEventListener('load', function() {
+                                                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                                    var forms = document.getElementsByClassName('needs-validation');
+                                                    // Loop over them and prevent submission
+                                                    var validation = Array.prototype.filter.call(forms, function(form) {
+                                                        form.addEventListener('submit', function(event) {
+                                                            if (form.checkValidity() === false) {
+                                                                event.preventDefault();
+                                                                event.stopPropagation();
+                                                            }
+                                                            form.classList.add('was-validated');
+                                                        }, false);
+                                                    });
+                                                }, false);
+                                            })();
+                                        </script>
+                                
+                
+                                </div>
+                            </div>
+                        </div>
+            
+              
+                    </div>
+                    
+                     <!--TABLA DE PRODUCTOS-->
+                    <div class="mb-3 col-md-12">
+                       
+                        <div class="table-responsive align-middle" style="margin-top: -1%;">
+                            <table class="align-middle mb-0 table table-borderless table-striped ">
+                                <thead>
+                                <tr>
+                                    
+                                    <th class="text-center">ID Compra</th>
+                                    <th class="text-center">Fecha y Hora</th>
+                                    <th class="text-left">Proveedor</th>
+                                    <th class="text-center">Items</th>
+                                    <th class="text-center">Total Compra</th>
+                                    <th class="text-center">Detalle</th>
+                                    <th class="text-center">Eliminar</th>
+
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center">7908</td>
+                                        <td class="text-center">29/11/2022 13:15:03</td>
+                                        <td class="text-left">Gomez Ariel</td>
+                                        <td class="text-center">5</td>
+                                        <td class="text-center">$1260,00</td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-primary">Ver más</button>
+                                        </td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-outline-danger"><i class="pe-7s-trash btn-icon-wrapper"> </i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">7908</td>
+                                        <td class="text-center">29/11/2022 13:15:03</td>
+                                        <td class="text-left">Gomez Ariel</td>
+                                        <td class="text-center">5</td>
+                                        <td class="text-center">$1260,00</td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-primary">Ver más</button>
+                                        </td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-outline-danger"><i class="pe-7s-trash btn-icon-wrapper"> </i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">7908</td>
+                                        <td class="text-center">29/11/2022 13:15:03</td>
+                                        <td class="text-left">Gomez Ariel</td>
+                                        <td class="text-center">5</td>
+                                        <td class="text-center">$1260,00</td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-primary">Ver más</button>
+                                        </td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-outline-danger"><i class="pe-7s-trash btn-icon-wrapper"> </i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">7908</td>
+                                        <td class="text-center">29/11/2022 13:15:03</td>
+                                        <td class="text-left">Gomez Ariel</td>
+                                        <td class="text-center">5</td>
+                                        <td class="text-center">$1260,00</td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-primary">Ver más</button>
+                                        </td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-outline-danger"><i class="pe-7s-trash btn-icon-wrapper"> </i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">7908</td>
+                                        <td class="text-center">29/11/2022 13:15:03</td>
+                                        <td class="text-left">Gomez Ariel</td>
+                                        <td class="text-center">5</td>
+                                        <td class="text-center">$1260,00</td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-primary">Ver más</button>
+                                        </td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-outline-danger"><i class="pe-7s-trash btn-icon-wrapper"> </i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">7908</td>
+                                        <td class="text-center">29/11/2022 13:15:03</td>
+                                        <td class="text-left">Gomez Ariel</td>
+                                        <td class="text-center">5</td>
+                                        <td class="text-center">$1260,00</td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-primary">Ver más</button>
+                                        </td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-outline-danger"><i class="pe-7s-trash btn-icon-wrapper"> </i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">7908</td>
+                                        <td class="text-center">29/11/2022 13:15:03</td>
+                                        <td class="text-left">Gomez Ariel</td>
+                                        <td class="text-center">5</td>
+                                        <td class="text-center">$1260,00</td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-primary">Ver más</button>
+                                        </td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-outline-danger"><i class="pe-7s-trash btn-icon-wrapper"> </i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">7908</td>
+                                        <td class="text-center">29/11/2022 13:15:03</td>
+                                        <td class="text-left">Gomez Ariel</td>
+                                        <td class="text-center">5</td>
+                                        <td class="text-center">$1260,00</td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-primary">Ver más</button>
+                                        </td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-outline-danger"><i class="pe-7s-trash btn-icon-wrapper"> </i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">7908</td>
+                                        <td class="text-center">29/11/2022 13:15:03</td>
+                                        <td class="text-left">Gomez Ariel</td>
+                                        <td class="text-center">5</td>
+                                        <td class="text-center">$1260,00</td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-primary">Ver más</button>
+                                        </td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-outline-danger"><i class="pe-7s-trash btn-icon-wrapper"> </i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">7908</td>
+                                        <td class="text-center">29/11/2022 13:15:03</td>
+                                        <td class="text-left">Gomez Ariel</td>
+                                        <td class="text-center">5</td>
+                                        <td class="text-center">$1260,00</td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-primary">Ver más</button>
+                                        </td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-outline-danger"><i class="pe-7s-trash btn-icon-wrapper"> </i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">7908</td>
+                                        <td class="text-center">29/11/2022 13:15:03</td>
+                                        <td class="text-left">Gomez Ariel</td>
+                                        <td class="text-center">5</td>
+                                        <td class="text-center">$1260,00</td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-primary">Ver más</button>
+                                        </td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-outline-danger"><i class="pe-7s-trash btn-icon-wrapper"> </i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">7908</td>
+                                        <td class="text-center">29/11/2022 13:15:03</td>
+                                        <td class="text-left">Gomez Ariel</td>
+                                        <td class="text-center">5</td>
+                                        <td class="text-center">$1260,00</td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-primary">Ver más</button>
+                                        </td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-outline-danger"><i class="pe-7s-trash btn-icon-wrapper"> </i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">7908</td>
+                                        <td class="text-center">29/11/2022 13:15:03</td>
+                                        <td class="text-left">Gomez Ariel</td>
+                                        <td class="text-center">5</td>
+                                        <td class="text-center">$1260,00</td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-primary">Ver más</button>
+                                        </td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-outline-danger"><i class="pe-7s-trash btn-icon-wrapper"> </i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">7908</td>
+                                        <td class="text-center">29/11/2022 13:15:03</td>
+                                        <td class="text-left">Gomez Ariel</td>
+                                        <td class="text-center">5</td>
+                                        <td class="text-center">$1260,00</td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-primary">Ver más</button>
+                                        </td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-outline-danger"><i class="pe-7s-trash btn-icon-wrapper"> </i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">7908</td>
+                                        <td class="text-center">29/11/2022 13:15:03</td>
+                                        <td class="text-left">Gomez Ariel</td>
+                                        <td class="text-center">5</td>
+                                        <td class="text-center">$1260,00</td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-primary">Ver más</button>
+                                        </td>
+                                        <td class="text-center">
+                                            <button class="mr-2 btn-icon btn-icon-only btn btn-outline-danger"><i class="pe-7s-trash btn-icon-wrapper"> </i></button>
+                                        </td>
+                                    </tr>
+                                    
+
+                                    
+                            
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--FIN DE COMPRA-->
+                        <div class="d-block card-footer">
+    
+                            
+                        
+                     
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
